@@ -38,9 +38,11 @@ namespace FrequenciaNumerica
                 {
                     if ( i != j && listaNumeros[j] == listaNumeros[i])
                     {
+
+                        numero = listaNumeros[j];
                         contador++;
 
-                        numero = listaNumeros [j];  
+                          
                     }
 
                 }   
@@ -49,7 +51,7 @@ namespace FrequenciaNumerica
             }
 
 
-            Console.WriteLine(numero + "apareceu -> " + contador);
+            Console.WriteLine("Numeros repetidos -> " + contador);
 
             Console.ReadLine();
         }
